@@ -15,7 +15,7 @@
 
     <form method="POST" action="{% url 'home'%}">
         {% csrf_token %}
-        <form>
+    
             <div class="mb-3">
               <input type="text" class="form-control" placeholder="User Name" name="username" required style="width: 500px;">
             </div>
@@ -24,7 +24,7 @@
               <input type="password" class="form-control" placeholder="Password" name="password" required style="width: 500px;">
             </div>
             <button type="submit" class="btn btn-secondary">Login</button>
-          </form>
+         
     </form>
 </div>
 {% endif %}
