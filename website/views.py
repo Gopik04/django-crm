@@ -18,8 +18,11 @@ def home(request):
             return redirect('home')
     else:
         return render(request,'home.html',{})
-
-def login_user(request):
-    pass
+    
 def logout_user(request):
-    pass
+    logout(request)
+    messages.success(request,"succesfully logged out")
+    return redirect('home')
+
+def register_user(requset):
+    return render(requset,"register.html",{})
